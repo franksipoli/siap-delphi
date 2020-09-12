@@ -1,0 +1,430 @@
+object FRM_A008RHTE: TFRM_A008RHTE
+  Left = 228
+  Top = 71
+  Width = 420
+  Height = 418
+  Caption = 'FRM_A008RHTE'
+  Color = clSilver
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LMDSimplePanel1: TLMDSimplePanel
+    Left = 9
+    Top = 9
+    Width = 363
+    Height = 374
+    UseDockManager = False
+    Bevel.StyleInner = bvFrameLowered
+    Bevel.BorderColor = cl3DLight
+    Bevel.LightColor = clGray
+    Bevel.Mode = bmCustom
+    Bevel.ShadowColor = clSilver
+    Color = clSilver
+    TabOrder = 0
+    object LMDPanelFill1: TLMDPanelFill
+      Left = 11
+      Top = 11
+      Width = 342
+      Height = 16
+      UseDockManager = False
+      Alignment = agCenterLeft
+      BackFX.AlphaBlend.Strength = 0.600000023841858
+      Bevel.WidthInner = 0
+      Bevel.BorderSides = [fsBottom]
+      Bevel.Mode = bmStandard
+      Bevel.ShadowColor = clGray
+      Bevel.StandardStyle = lsNone
+      Caption = '  Servidores'
+      FillObject.Style = sfGradient
+      FillObject.Gradient.Color = 16053492
+      FillObject.Gradient.ColorCount = 100
+      FillObject.Gradient.EndColor = 10066329
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      FontFX.ShadowDepth = 0
+      FontFX.LightColor = clWhite
+      FontFX.ShadowColor = clSilver
+      FontFX.Style = tdSunken
+      ParentFont = False
+      TabOrder = 0
+      object BTN_PRIMEIROREG: TSpeedButton
+        Left = 262
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Primeiro'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          04000000000068000000C40E0000C40E00001000000000000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777770770777700077770070077770007770600607777000770660660000
+          0000706606666666000006606666666600007066066666660000770660660000
+          0000777060060777700077770070077770007777707707777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = BTN_PRIMEIROREGClick
+      end
+      object Btn_Retroceder1: TSpeedButton
+        Left = 281
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Anterior'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000010000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777777077777700077777007777770007777060777777000777066000007
+          7000770666666607700070666666660770007706666666077000777066000007
+          7000777706077777700077777007777770007777770777777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_Retroceder1Click
+      end
+      object Btn_UltimoReg: TSpeedButton
+        Left = 319
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Último'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000010000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777707707777700077770070077770007777060060777000000006606607
+          7000066666660660700006666666606600000666666606607000000006606607
+          7000777706006077700077770070077770007777077077777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_UltimoRegClick
+      end
+      object Btn_Avancar1: TSpeedButton
+        Left = 300
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Próximo'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000010000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777777077777700077777700777770007777770607777000770000066077
+          7000770666666607700077066666666070007706666666077000770000066077
+          7000777777060777700077777700777770007777770777777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_Avancar1Click
+      end
+    end
+    object DBG_LANCTO: TDBGrid
+      Left = 11
+      Top = 27
+      Width = 342
+      Height = 129
+      DataSource = DTM_A008RHTE.DTS_062
+      Options = [dgEditing, dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit]
+      TabOrder = 1
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      OnMouseUp = DBG_LANCTOMouseUp
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'NCODFUN'
+          Title.Alignment = taCenter
+          Title.Caption = 'Cód'
+          Width = 34
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'CNOMFUN'
+          Title.Caption = ' Nome Completo do Servidor'
+          Width = 274
+          Visible = True
+        end>
+    end
+    object LMDPanelFill2: TLMDPanelFill
+      Left = 11
+      Top = 160
+      Width = 342
+      Height = 16
+      UseDockManager = False
+      Alignment = agCenterLeft
+      Bevel.WidthInner = 0
+      Bevel.BorderSides = [fsBottom]
+      Bevel.Mode = bmStandard
+      Bevel.ShadowColor = clGray
+      Bevel.StandardStyle = lsNone
+      Caption = '  Histórico de Pagamento'
+      FillObject.Style = sfGradient
+      FillObject.Gradient.Color = 16053492
+      FillObject.Gradient.ColorCount = 100
+      FillObject.Gradient.EndColor = 10066329
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      FontFX.ShadowDepth = 0
+      FontFX.LightColor = clWhite
+      FontFX.ShadowColor = clSilver
+      FontFX.Style = tdSunken
+      ParentFont = False
+      TabOrder = 2
+      object Btn_UltimoReg1: TSpeedButton
+        Left = 318
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Último'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000010000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777707707777700077770070077770007777060060777000000006606607
+          7000066666660660700006666666606600000666666606607000000006606607
+          7000777706006077700077770070077770007777077077777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_UltimoReg1Click
+      end
+      object Btn_Avancar2: TSpeedButton
+        Left = 299
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Próximo'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000010000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777777077777700077777700777770007777770607777000770000066077
+          7000770666666607700077066666666070007706666666077000770000066077
+          7000777777060777700077777700777770007777770777777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_Avancar2Click
+      end
+      object Btn_Retroceder2: TSpeedButton
+        Left = 280
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Anterior'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000010000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777777077777700077777007777770007777060777777000777066000007
+          7000770666666607700070666666660770007706666666077000777066000007
+          7000777706077777700077777007777770007777770777777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_Retroceder2Click
+      end
+      object Btn_PrimeiroReg1: TSpeedButton
+        Left = 261
+        Top = 0
+        Width = 19
+        Height = 16
+        Cursor = crHandPoint
+        Hint = 'Primeiro'
+        Flat = True
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          04000000000068000000C40E0000C40E00001000000000000000000000000000
+          BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777777
+          7000777770770777700077770070077770007770600607777000770660660000
+          0000706606666666000006606666666600007066066666660000770660660000
+          0000777060060777700077770070077770007777707707777000777777777777
+          7000}
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = Btn_PrimeiroReg1Click
+      end
+    end
+    object DBG_HIST: TDBGrid
+      Left = 11
+      Top = 175
+      Width = 342
+      Height = 193
+      DataSource = DTM_A008RHTE.DTS_062_01
+      Options = [dgEditing, dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit]
+      TabOrder = 3
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      OnDblClick = DBG_HISTDblClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'NMESREF'
+          Title.Alignment = taCenter
+          Title.Caption = 'Competência'
+          Width = 95
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'CTIPOREM'
+          Title.Caption = 'T'
+          Width = 10
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NBCOPGT'
+          Title.Alignment = taCenter
+          Title.Caption = 'Bco'
+          Width = 23
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NAGEPGT'
+          Title.Alignment = taCenter
+          Title.Caption = 'Ag'
+          Width = 26
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'DAT_CTAPGT'
+          Title.Alignment = taCenter
+          Title.Caption = 'Nº da Conta'
+          Width = 85
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NVLRLIQ'
+          Title.Alignment = taCenter
+          Title.Caption = 'Vlr Líquido'
+          Width = 65
+          Visible = True
+        end>
+    end
+  end
+  object Panel2: TPanel
+    Left = 374
+    Top = 0
+    Width = 38
+    Height = 391
+    Align = alRight
+    BevelOuter = bvNone
+    ParentColor = True
+    TabOrder = 1
+    object BTN_SAIR: TSpeedButton
+      Left = 1
+      Top = 11
+      Width = 32
+      Height = 27
+      Cursor = crHandPoint
+      BiDiMode = bdLeftToRight
+      Flat = True
+      Glyph.Data = {
+        BA060000424DBA06000000000000360400002800000019000000170000000100
+        08000000000084020000C40E0000C40E00000001000000000000000000007B00
+        0000FF000000007B00007B7B000000FF0000FFFF0000007B7B007B7B7B00BDBD
+        BD0000FFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00090909090909
+        0909090909090909080808090909090909090900000009090909090909090909
+        0909090908040408090909090909090000000909090909090909090909090909
+        0806060408090909090909000000090909090909090909090909090908060604
+        0408090909090900000009090909090909090909090909090806060404040809
+        0909090000000000000000000000000009090909080606040404000000000800
+        0000090909090909090909000808080800060604040400080909090000000909
+        0909090909080800090909090806060404040008090909000000090909090909
+        0800040009090909080606040404000809090900000009090909090908000400
+        0909090908060604040400080909090000000909090808080804040408090909
+        0806040400040008090909000000090908080808080406040408090908060404
+        0004000809090900000009040000000000040606040408090806060404040008
+        0909090000000804060606060606060606040408080606040404000809090900
+        0000080406060606060606060606040808060604040400080909090000000904
+        0404040404040606060408090806060404040008090909000000090908080808
+        0804060604080909080606040404000809090900000009090909090908040604
+        0809090908060604040400080909090000000909090909090804040009090909
+        0804060404040008090909000000090909090909080000000909090909080406
+        0404000809090900000009090909090909090809090909090909090406040008
+        0909090000000909090909090909080808080808080808000404000809090900
+        000009090909090909090908080808080808080808080809090909000000}
+      Margin = 1
+      ParentBiDiMode = False
+      OnClick = BTN_SAIRClick
+    end
+  end
+end

@@ -1,0 +1,51 @@
+program Ponto;
+
+uses
+  Forms,Windows,
+  ViewPrn in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\ViewPrn.pas' {FRM_VIEWPRN},
+  CadSenha in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\CadSenha.pas' {FRM_CADSENHA},
+  Fundo in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\Fundo.pas' {FRM_FUNDO},
+  GeraRel in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\GeraRel.pas' {FRM_GERAREL},
+  Help in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\Help.pas' {FRM_HELP},
+  Login in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\Login.pas' {FRM_LOGIN},
+  MPLLib in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\MPLLib.pas',
+  MSenha in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\MSenha.pas' {FRM_MSENHA},
+  Pesquisa in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\Pesquisa.pas' {FRM_PESQUISA},
+  ProgImpr in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\ProgImpr.pas' {FRM_PROGIMPR},
+  Auxil in '\\MPLOPESLX\J\Desenvolvimento\Matriz\Templates\Auxil.pas' {FRM_AUXIL},
+  A002RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\A002RHCP.pas' {FRM_A002RHCP},
+  A003RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\A003RHCP.pas' {FRM_A003RHCP},
+  A004RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\A004RHCP.pas' {FRM_A004RHCP},
+  A005RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\A005RHCP.pas' {FRM_A005RHCP},
+  D001RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\D001RHCP.pas' {DTM_A001RHCP: TDataModule},
+  D002RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\D002RHCP.pas' {DTM_A002RHCP: TDataModule},
+  D003RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\D003RHCP.pas' {DTM_A003RHCP: TDataModule},
+  D004RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\D004RHCP.pas' {DTM_A004RHCP: TDataModule},
+  D005RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\D005RHCP.pas' {DTM_A005RHCP: TDataModule},
+  DMCTRL in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\DMCTRL.pas' {DMControle: TDataModule},
+  A001RHCP in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\A001RHCP.pas' {FRM_A001RHCP},
+  TELAPRIN in '\\MPLOPESLX\J\Desenvolvimento\Projetos\Siap\RH_Recursos_Humanos\CP_Controle_Ponto\TELAPRIN.pas' {FRM_TELAPRI};
+
+{$R *.RES}
+var
+  hwnd : THandle;
+
+begin
+
+  hwnd := FindWindow(nil,Pchar('Coleta Cartão Ponto'));
+
+  if hwnd = 0 then
+    begin
+      Application.Initialize;
+      Application.Title := 'Coleta de Cartão Ponto';
+      Application.CreateForm(TDMControle, DMControle);
+      Application.CreateForm(TFRM_LOGIN, FRM_LOGIN);
+      Application.Run;
+    end
+  else
+    begin
+      ShowWindow(hwnd,SW_NORMAL);
+      SetForegroundWindow(hwnd);
+    end;
+end.
+
